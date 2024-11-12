@@ -107,6 +107,10 @@ repositories {
         name 'CleanroomMC Maven'
         url 'https://maven.cleanroommc.com'
     }
+    maven {
+            name 'GTCEu Maven'
+            url 'https://maven.gtceu.com'
+        }
 }
 
 dependencies {
@@ -147,6 +151,7 @@ dependencies {
 
     // GregTech
     api("gregtech:gregtech:2.8.10-beta")
+    api("codechicken:codechickenlib:3.2.3.358")
 }
 
 apply from: 'gradle/scripts/dependencies.gradle'
